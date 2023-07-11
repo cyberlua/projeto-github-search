@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary: #7C21BD;
+    --dark: #313131;
+    --light: #e8b2f5;
+    --gray: #BD72F2;
+    --silver: #080d0d;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+.header {
+    align-items: center;
+    background-color: var(--light);
+    display: flex;
+    height: 4.1rem;
+    justify-content: space-between;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#logo {
+    width: 13rem;
+}
+
+.search {
+    align-items: center;
+    border: 1px solid var(--silver);
+    border-radius: 8px;
+    display: flex;
+    height: 2.6rem;
+    justify-content: space-between;
+    margin-right: 3.5rem;
+    padding: 0.7rem 0.7rem;
+    width: 403px;
+    
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 22rem;
+}
+
+.search-button {
+    background-color: var(--light);
+    border: none;
+    cursor: pointer;
+    width: 1.1rem;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 3% auto;
+    width: 15.7rem;
+}
+
+.profile-img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.profile-title {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-top: 0.7rem;
+}
+
+.profile-subtitle, .profile-description {
+    color: var(--silver);
+    font-size: 0.8rem;
+
+}
+
+.profile-subtitle {
+    margin-top: 0.3rem;
+}
+
+.profile-description {
+    margin-top: 1rem;
+}
+
+.profile-infos {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.box-icons {
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 8px;
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-evenly;
+    padding: 0.25rem;
+    width: 4rem;
+}
+
+
+.box-icons:last-child {
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.box-text {
+    font-weight: 700;
+}
+
+#repositories-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    margin: 3rem auto;
+    max-width: 70%;
+}
+
+.repository {
+    background-color: var(--light);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 9.25rem;
+    padding: 1.25rem;
+    position: relative;
+    width: 27.5rem;
+}
+
+.repository-title {
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.repository-description {
+    color: var(--silver);
+    font-size: 0.8rem;
+    margin-top: 0.9rem;
+}
+
+.repository-details {
+    align-items: center;
+    bottom: 0.6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    left: 1.25rem;
+    position: absolute;
+    right: 20px;
+}
+
+.repository-text:first-child {
+    flex: none;
+    flex-grow: 0;
+    order: 2;
+}
+
+.icon {
+    flex: none;
+    flex-grow: 0;
+    order: 1;
+}
+
+.not-found-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found-title {
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+.not-found-subtitle {
+    color: var(--silver);
+    font-size: 2rem;
+}
+
+.not-found-img {
+    margin-top: 3.75rem;
+}
+
+.not-repository {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+  
+.not-repository-title {
+    margin-bottom: 6rem;
+    margin-right: 12rem;
+    text-align: center;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--light);
+    bottom: 0;
+    color: var(--dark);
+    display: flex;
+    height: 1.8rem;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    width: 100%;
+
+}
+
+.footer > p {
+    font-size: 0.8rem;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: var(--primary);
+}
+
